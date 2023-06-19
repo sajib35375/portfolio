@@ -1,0 +1,29 @@
+/*------------------------------
+    
+------------------------------*/
+
+.quality-img {
+    height: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quality-content {
+    background-color: $litewhite;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 108px 0 120px 0;
+}
+
+.quality-content-wrapper {
+    margin-left: 100px;
+    max-width: 460px;
+    .title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-bottom: 15px;
+    }
+}

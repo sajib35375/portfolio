@@ -1,0 +1,240 @@
+.case-studies-slider-active {
+    position: relative;
+    .owl-stage {
+        padding-left: 0 !important;
+        height: 470px;
+        overflow: hidden;
+    }
+    .owl-item {
+        &.active {
+            width: 335px !important;
+        }
+        &.center {
+            width: 1170px !important;
+            box-shadow: 3px 6px 12px rgba(194, 151, 107, 0.3);
+            .slider-img {
+                width: 100% !important;
+            }
+            .slider-inner-text {
+                visibility: visible;
+            }
+        }
+    }
+    .slider-img {
+        width: 100%;
+        height: 445px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .slider-inner-text {
+            position: absolute;
+            top: 50%;
+            right: 100px;
+            transform: translateY(-50%);
+            padding: 45px;
+            background-color: $white;
+            visibility: hidden;
+            .title {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                max-width: 250px;
+                margin-bottom: 15px;
+            }
+            p {
+                max-width: 250px;
+            }
+        }
+    }
+    .owl-nav {
+        div {
+            position: absolute;
+            left: 20%;
+            top: 50%;
+            transform: translateY(-50%);
+            &.owl-next {
+                left: auto;
+                right: 20%;
+                color: var(--hover-color);
+                font-size: 15px;
+                /* padding: 5px 10px; */
+                border: 0.5px solid var(--hover-color);
+                background-color: $white;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                &:hover {
+                    color: var(--hover-color);
+                }
+            }
+            &.owl-prev {
+                color: var(--hover-color);
+                font-size: 15px;
+                /* padding: 5px 10px; */
+                border: 0.5px solid var(--hover-color);
+                background-color: $white;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                &:hover {
+                    color: var(--hover-color);
+                }
+            }
+        }
+    }
+}
+
+// Home Two  case fillter
+.case-studies-area-02 {
+    &.bg-image {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+        &:after {
+            position: absolute;
+            content: "";
+            background-image: linear-gradient( 0deg, rgba(78, 10, 131, 0) 0%, rgba(78, 10, 131, 0.49) 49%, rgba(78, 10, 131, 0.4) 100%);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.case-studies-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 25px;
+    li {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.9);
+        +li {
+            margin-left: 20px;
+        }
+        &.active {
+            color: var(--main-color-one);
+        }
+    }
+    &.style-01 {
+        li {
+            color: var(--heading-color);
+            &.active {
+                color: var(--main-color-one);
+            }
+        }
+    }
+}
+
+.case-studies-masonry {
+    .masonry-item {
+        padding: 0;
+        cursor: pointer;
+    }
+}
+
+.single-case-studies-item {
+    position: relative;
+    &.style-01 {
+        &::after {
+            opacity: 0.6;
+            background-image: linear-gradient(21deg, #fd5b56 0%, #f41e7e 100%);
+        }
+        &::before {
+            opacity: 0.6;
+            background-image: linear-gradient(21deg, #fd5b56 0%, #f41e7e 100%);
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        background-color: rgba(85, 128, 255, 0.4);
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(85, 128, 255, 0.4);
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+    .cart-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        display: none;
+        font-size: 60px;
+        z-index: 1;
+    }
+    &:hover {
+        &:after {
+            width: 100%;
+            height: 100%;
+            visibility: visible;
+        }
+        &:before {
+            width: 100%;
+            height: 100%;
+            visibility: visible;
+        }
+        .cart-icon {
+            display: block;
+        }
+    }
+}
+
+.case-studies-area-03 {
+    &.bg-image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.case-studies-details-top {
+    position: relative;
+    .case-studies-inner-text {
+        position: absolute;
+        padding: 45px;
+        background-color: $white;
+        bottom: 85px;
+        right: 100px;
+        .title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            max-width: 250px;
+            margin-bottom: 15px;
+        }
+        p {
+            max-width: 250px;
+        }
+    }
+}

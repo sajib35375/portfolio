@@ -1,0 +1,87 @@
+/*----------------------------
+    Top Bar
+----------------------------*/
+.topbar-area{
+    background-color: #F7F7F7;
+    &.style-04{
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 100%;
+        z-index: 2;
+        background-color: transparent;  
+        min-height: 50px; 
+        .info-items{
+            li{
+                color: rgba($white,.8);
+                i{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                &:hover{
+                    color: var(--main-color-one);
+                }
+            }
+        }
+        .info-items-icon{
+            li{
+                color: rgba($white,.8);
+                &:hover{
+                    color: var(--main-color-one);
+                }
+            }
+        }
+    }
+    &.style-03{
+        background-color: var(--secondary-color);
+        padding: 15px 0;
+        .info-items{
+            li{
+                color: rgba($white,.8);
+                i{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                &:hover{
+                    color: var(--main-color-one);
+                }
+            }
+        }
+        .info-items-icon{
+            li{
+                color: rgba($white,.8);
+                &:hover{
+                    color: var(--main-color-one);
+                }
+            }
+        }
+        .topbar-inner{
+            div{
+                &:first-child{
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+}
+
+.topbar-inner{
+    display: flex;
+    justify-content: space-between;
+    div{
+        &:first-child{
+            padding-top: 15px;
+        }
+        .boxed-btn{
+            padding: 15px 30px;
+            background-color: var(--main-color-one);
+            display: inline-block;
+            color: $white;
+            @include transition($transition);
+            &:hover{
+                background-color: var(--secondary-color);
+                color: $white;
+            }
+        }
+    }
+}

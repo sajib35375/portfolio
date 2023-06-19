@@ -1,0 +1,102 @@
+/*-------------------------
+    Section Title
+-------------------------*/
+
+.section-title-inner {
+    &.white {
+        .subtitle {
+            color: rgba($white, 0.9);
+        }
+        .title {
+            color: $white;
+        }
+        p {
+            color: rgba($white, 0.9);
+        }
+    }
+    .title {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 18px;
+    }
+    .subtitle {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        z-index: 0;
+        padding-left: 80px;
+        margin-bottom: 8px;
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            height: 2px;
+            width: 60px;
+            background-color: var(--main-color-one);
+            content: "";
+        }
+    }
+    p {}
+}
+
+.section-title {
+    &.white {
+        .title {
+            color: $white;
+        }
+        p {
+            color: rgba($white, 0.9);
+        }
+    }
+    .title {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+        color: #353539;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+    }
+    .subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        z-index: 0;
+        margin-bottom: 8px;
+        color: var(--main-color-one);
+    }
+    p {
+        max-width: 650px;
+        margin: auto;
+    }
+    .m-inherit {
+        margin: inherit;
+    }
+}
+
+.bg-blue {
+    background-color: var(--bg-color);
+}
+
+.bg-blue-deep {
+    background-color: #050416;
+}
+
+.bg-liteblue {
+    background-color: #e8eff8;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-main {
+    background-color: var(--main-color-one);
+}

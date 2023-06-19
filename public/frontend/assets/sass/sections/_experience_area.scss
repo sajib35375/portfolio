@@ -1,0 +1,157 @@
+/*---------------------------
+    Top Experince Section
+---------------------------*/
+
+.experience-content {
+    position: relative;
+    .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        .title {
+            color: $white;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 60px;
+            max-width: 480px;
+        }
+    }
+}
+
+.experience-right {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    // min-height: 450px;
+    margin-bottom: -50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.style-01 {
+        min-height: 500px;
+        margin-bottom: 0;
+    }
+    .vdo-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
+
+.experience-content-02 {
+    padding: 130px 0 140px 110px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        left: 0;
+        top: 0;
+        background-color: #e8eff8;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        left: 0;
+        bottom: 0;
+        background-color: $white;
+    }
+    .title {
+        color: $white;
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+    }
+    p {
+        color: $white;
+        max-width: 460px;
+    }
+    .sign-area {
+        margin-left: 40px;
+        margin-top: 35px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            left: -40px;
+            top: 0;
+            background-color: var(--main-color-one);
+        }
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            max-width: 600px!important;
+        }
+    }
+}
+
+.experience-author {
+    position: relative;
+    .thumb-2 {
+        position: absolute;
+        right: 0;
+        top: 100px;
+    }
+    &.bg-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 500px;
+    }
+}
+
+.experience-content-03 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &.section-padding {
+        padding: 100px 0 90px;
+    }
+    .title {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    .icon-area {
+        display: flex;
+        .icon {
+            font-size: 45px;
+            line-height: 45px;
+            color: var(--main-color-one);
+            transform: rotateY(180deg);
+        }
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 15px;
+            color: #353539;
+        }
+    }
+    .servicee-area {
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                margin-bottom: 15px;
+                i {
+                    color: #ffa998;
+                }
+            }
+        }
+    }
+}

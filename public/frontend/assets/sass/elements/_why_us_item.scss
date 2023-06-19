@@ -1,0 +1,43 @@
+/*------------------------
+    Why us Item
+------------------------*/
+.single-why-us-box{
+    display: flex;
+    align-self: flex-start;
+    .icon{
+        margin-right: 20px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background-color: #fff;
+        font-size: 30px;
+        border-radius: 50%;
+        color: var(--main-color-one);
+        transition: all 500ms;
+    }
+    .content{
+        flex: 1;
+        .title{
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 700;
+           
+            transition: all 500ms;
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    &:hover{
+        .content{
+            .title{
+                color: var(--main-color-one);
+            }
+        }
+        .icon{
+            background-color: var(--secondary-color);
+        }
+    }
+}

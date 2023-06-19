@@ -1,0 +1,62 @@
+/*---------------------------
+    Our Attorney
+---------------------------*/
+
+.our-service-wrappper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.service-area-work {
+    display: flex;
+}
+
+.service-img.style-02 {
+    display: none;
+}
+
+.service-item-wrapper {
+    height: 100%;
+}
+
+.single-service-item {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 500ms;
+    overflow: hidden;
+    .service-img {
+        width: calc(100% / 2);
+        z-index: 0;
+        .bg-image {
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .service-text {
+        background-color: #5580ff;
+        padding: 95px 15px 85px;
+        width: calc(100% / 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .title {
+            color: $white;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 700;
+        }
+        p {
+            color: $white;
+            max-width: 300px;
+            margin: auto;
+        }
+    }
+}

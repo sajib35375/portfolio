@@ -1,0 +1,45 @@
+/*----------------------------
+    Info Bar
+----------------------------*/
+.info-items{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        display: inline-block;
+        +li{
+            margin-left: 20px;
+        }
+        font-size: 14px;
+        line-height: 24px;
+        @include transition($transition);
+        &:hover{
+            color: var(--main-color-one);
+        }
+        i{
+            margin-right: 3px;
+            color: var(--main-color-one);
+        }
+        
+    }
+}
+
+.info-items-icon{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        display: inline-block;
+        +li{
+            margin-left: 20px;
+        }
+        font-size: 14px;
+        line-height: 24px;
+        @include transition($transition);
+        &:hover{
+            color: var(--main-color-one);
+        }
+    }
+}

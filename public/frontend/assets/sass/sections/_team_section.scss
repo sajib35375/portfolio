@@ -1,0 +1,63 @@
+// Team Area
+.team-section {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    &:hover {
+        .team-img-cont {
+            &::after {
+                opacity: 0.36;
+                visibility: visible;
+                @include transition($transition);
+            }
+            .social-link {
+                visibility: visible;
+                right: 0;
+            }
+        }
+    }
+    .team-img-cont {
+        .social-link {
+            position: absolute;
+            background-color: $white;
+            top: 40%;
+            transform: translateY(-50%);
+            right: -50px;
+            z-index: 1;
+            visibility: hidden;
+            transition: all 0.3s ease-in;
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    list-style-type: none;
+                    color: var(--heading-color);
+                    &:hover {
+                        color: $white;
+                        transition: all 0.3s ease-in;
+                        background: var(--main-color-one);
+                    }
+                }
+            }
+        }
+    }
+    img {
+        z-index: 2;
+        width: 100%;
+        @include transition(transform 500ms);
+    }
+    .team-text {
+        margin-top: 20px;
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+/*-----------------------------
+    Call To Action Area
+-----------------------------*/
+
+.call-to-action {
+    &.bg-image {
+        background-image: linear-gradient( 21deg, rgb(253, 91, 86) 0%, rgb(244, 30, 126) 100%);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.call-to-action-inner {
+    display: flex;
+    justify-content: space-between;
+    &.bg-image {
+        background-image: url(../img/bg/cta-bg-01.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+        border-bottom-right-radius: 60px;
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--secondary-color);
+            z-index: -1;
+            content: '';
+            opacity: .8;
+            border-bottom-right-radius: 60px;
+        }
+    }
+    .title {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 700;
+        color: $white;
+    }
+    .subtitle {
+        font-size: 18px;
+        line-height: 28px;
+        color: $white;
+    }
+    .btn-wrapper {
+        margin-top: 10px;
+    }
+}

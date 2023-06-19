@@ -1,0 +1,50 @@
+/*-------------------------
+    Testimonial Area
+--------------------------*/
+
+.testimonial-area {
+    position: relative;
+    z-index: 0;
+    &.bg-image {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            opacity: 0.8;
+            z-index: -1;
+            content: "";
+        }
+    }
+    &.bg-image-01 {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .8);
+            opacity: 0.8;
+            z-index: -1;
+            content: "";
+        }
+    }
+    .icon-03 {
+        position: absolute;
+        top: -75px;
+        right: 20%;
+        font-size: 160px;
+        background: #000;
+        @include text-gradient(#fd5b56 0%, #f41e7e 100%);
+    }
+}

@@ -1,0 +1,68 @@
+/*----------------------------
+    Blog Grid Item
+-----------------------------*/
+
+.blog-grid-carousel {
+    .owl-nav div {
+        position: absolute;
+        left: -60px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: var(--heading-color);
+        @include transition($transition);
+        @include transform(translateY(-50%));
+        &:hover {
+            background-color: var(--main-color-one);
+            color: $white;
+        }
+        &.owl-next {
+            left: auto;
+            right: -60px;
+        }
+    }
+}
+
+.single-blog-grid-01 {
+    .thumb {}
+    .content {
+        padding: 100px 40px 85px;
+        .post-meta {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 15px;
+            li {
+                display: inline-block;
+                font-size: 14px;
+                line-height: 24px;
+                color: $white;
+                &:hover {
+                    a {
+                        color: $white;
+                    }
+                }
+                +li {
+                    margin-left: 20px;
+                }
+                a {
+                    transition: all 500ms;
+                    i {
+                        color: $white;
+                        transition: all 500ms;
+                    }
+                }
+            }
+        }
+        .title {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 700;
+            transition: all 500ms;
+            color: $white;
+            max-width: 280px;
+        }
+    }
+}
